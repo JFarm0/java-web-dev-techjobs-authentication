@@ -14,7 +14,7 @@ public class User extends AbstractEntity {
     @NotNull
     private String pwHash;
 
-    private User(String username, String password) {
+    public User(String username, String password) {
         this.username = username;
         this.pwHash = encoder.encode(password);
     }
